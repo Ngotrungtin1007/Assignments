@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: #fc4a1a; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #f7b733,
+          #fc4a1a
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #f7b733,
+          #fc4a1a
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      .card-img-left {
+        width: 45%;
+        /* Link to your background image using in the property below! */
+        background: scroll center url(./assets/img/shopee-logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .btn-login {
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+        padding: 0.75rem 1rem;
+      }
+
+      .btn-google {
+        color: white !important;
+        background-color: #ea4335;
+      }
+
+      .btn-facebook {
+        color: white !important;
+        background-color: #3b5998;
+      }
+      .auto {
+        text-align: center;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="auto">
+      <a href="./index.html"
+        ><img
+          src="./assets/img/logo-full-white.png"
+          width="200px"
+          height="50px"
+      /></a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+          <div
+            class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden"
+          >
+            <div class="card-img-left d-none d-md-flex">
+              <!-- Background image for card set in CSS! -->
+            </div>
+            <div class="card-body p-4 p-sm-5">
+              <h2 class="card-title text-center mb-5 fw-light fs-5">Đăng ký</h2>
+              <form>
+                <div class="form-floating mb-3">
+                  <label for="floatingInputUsername">Tài khoản</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInputUsername"
+                    placeholder="Mời Bạn Nhập Tài khoản"
+                    required
+                    autofocus
+                  />
+                </div>
+
+                <div class="form-floating mb-3">
+                  <label for="floatingInputEmail">Email </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInputEmail"
+                    placeholder="Nhập Email nếu có"
+                  />
+                </div>
+                <div class="form-floating mb-3">
+                  <label for="floatingPassword">Mật khẩu</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="nhập 6-9 số và 1 ký tự viết hoa"
+                  />
+                </div>
+
+                <div class="form-floating mb-3">
+                  <label for="floatingPasswordConfirm">Xác nhận mật khẩu</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPasswordConfirm"
+                    placeholder="Nhập lại mật khẩu"
+                  />
+                </div>
+
+                <div class="d-grid mb-2">
+                  <button
+                    class="btn btn-lg btn-primary btn-login fw-bold text-uppercase"
+                    type="submit"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+
+                <a class="d-block text-center mt-2 small" href="#"
+                  >Đã có tài khoản? Đăng nhập</a
+                >
+
+                <hr class="my-4" />
+
+                <div class="d-grid mb-2">
+                  <button
+                    class="btn btn-lg btn-google btn-login fw-bold text-uppercase"
+                    type="submit"
+                  >
+                    <i class="fab fa-google me-2"></i>Đăng nhập với Google
+                  </button>
+                </div>
+
+                <div class="d-grid">
+                  <button
+                    class="btn btn-lg btn-facebook btn-login fw-bold text-uppercase"
+                    type="submit"
+                  >
+                    <i class="fab fa-facebook-f me-2"></i> Đăng nhập với
+                    Facebook
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

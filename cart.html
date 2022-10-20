@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+</head>
+<style>
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex flex-column" style="color: white;">
+                <div class="h3" ><h2>Giỏ hàng của tôi</h2></div>
+               
+                <div class="text-uppercase">3 sản phẩm</div>
+            </div>
+            <div class="ml-auto btn"><span class="fas fa-cog"></span></div>
+            <div class="btn" id="sub" style="color: white;"> + Thêm sản phẩm </div>
+        </div>
+        
+        <div id="table" class="bg-white rounded">
+            <div class="d-md-flex align-items-md-center px-3 pt-3">
+                <div class="d-flex flex-column">
+                    <div class="h4 font-weight-bold">Điện thoại</div>
+                </div>
+                <div class="ml-auto d-flex align-items-center">
+                    <div class="editors"> <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFjZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" id="img1" alt=""> <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" id="img2" alt=""> <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" id="img3" alt=""> </div>
+                    <div class="text-muted pl-md-0 pl-5"> + 7 người đã mua </div>
+                </div>
+            </div>
+            <hr>
+            <div class="table-responsive">
+                <table class="table activitites">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-uppercase header">Tên hàng</th>
+                            <th scope="col" class="text-uppercase">Số lượng</th>
+                            <th scope="col" class="text-uppercase">Giá</th>
+                            <th scope="col" class="text-uppercase">Tổng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="item">
+                                <div class="d-flex"> <img src="./assets/img/iphone_14_pro_max_deep_purple.png" alt="">
+                                    <div class="pl-2">Điện Thoại Iphone 14 Promax 1T<div class="text-uppercase new"><span class="fas fa-star"></span>new</div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <div class="text-muted">Blue</div>
+                                            <div><a href="#"><span class="red text-uppercase"><span class="fas fa-comment pr-1"></span>bình luận</span></a> </div>
+                                        </div>
+                                    </div>
+                            </td>
+                            <td>7</td>
+                            <td class="d-flex flex-column"><span class="red">33.490.000VND</span></td>
+                            <td class="font-weight-bold">243.430.000VND<div class="close">&times;</div> <button class="d-flex justify-content-end btn border"><a href="./thanhtoan.HTML"> + Thanh toán</a></button> </td>
+                        </div>
+                        </tr>
+                        <tr>
+                            <td class="item">
+                                <div class="d-flex align-items-start"> <img src="./assets/img/may-anh-canon-powershot-g7-x-mark-ii(1).webp" alt="">
+                                    <div>Máy Ảnh CanNon EOS<div class="text-uppercase new"><span class="fas fa-star"></span>new</div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <div class="text-muted">Blue/Mute</div>
+                                            <div><a href="#"><span class="red text-uppercase"><span class="fas fa-comment pr-1"></span>bình luận</span></a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td class="d-flex flex-column">14.950.000VND</td>
+                            <td class="font-weight-bold">14.950.000VND<div class="close">&times;</div> <button class="d-flex justify-content-end btn border"><a href="./thanhtoan.HTML">+ Thanh toán</a></button> </td>
+                        </tr>
+                        <tr>
+                            <td class="item">
+                                <div class="d-flex align-items-start"> <img src="./assets/img/lo-anh-samsung-galaxy-s11.jpg" alt="">
+                                    <div> SamSung GaLaXy S11
+                                        
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1</td>
+                            <td class="d-flex flex-column"> 14.000.000VND</td>
+                            <td class="font-weight-bold">14.000.000VND<div class="close">&times;</div> <button class="d-flex justify-content-end btn border">+ Thanh toán</button> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="text-muted"> <button class="btn" type="button" data-toggle="collapse" data-target="#table" aria-expanded="false" aria-controls="table">  <span ></span> </button> </div>
+            <div class="d-flex flex-column justify-content-end align-items-end">
+                <div class="d-flex px-3 pr-md-5 py-1 subtotal">
+                    <div class="px-4">Tổng tiền</div>
+                    <div class="h5 font-weight-bold px-md-2">263.380.000VND</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
